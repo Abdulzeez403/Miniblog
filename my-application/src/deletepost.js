@@ -26,7 +26,7 @@ const Deletepost = () => {
    {blog && (<div className="container text-center">
  <h4 className="text-dark">{blog.title}</h4>
   <p>Written by {blog.desc}</p>
-  <button className="btn btn-danger " onClick={()=>{DeleteFunc()}} >Delete</button>
+  <button className="btn btn-warning " onClick={()=>{DeleteFunc()}} >Delete</button>
   </div>
     ) }
   
