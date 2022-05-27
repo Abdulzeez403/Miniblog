@@ -1,0 +1,28 @@
+a:hover{
+  color: white;
+ border-radius: 10px;
+ padding:.4rem;
+  background: red;
+
+}
+
+form{
+ display: block;
+}
+input, textarea {
+ display: block;
+ padding: .7rem 2rem 1rem 4rem;
+margin:1rem 0;
+}
+form > button{
+ background: red;
+ padding: .6rem;
+ border-radius: 1rem;
+ color: white;
+ margin:2rem;
+
+}
+select{
+ padding: .7rem 9rem 1rem 4rem;
+ color:black;
+}
