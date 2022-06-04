@@ -6,13 +6,13 @@ import NotPage from "./notPage";
 import{BrowserRouter, Routes, Route} from "react-router-dom"
 import Deletepost from "./deletepost";
 import Backend from "./backend";
+import FooterPage from "./footer";
 
 function App() {
  return(
   
   <BrowserRouter>
   <Navbar />
-
   <Routes>
   <Route  path="/" element={<Home />}/>
   <Route path="/backend/create" element={<NewBlog />}/>
@@ -23,6 +23,8 @@ function App() {
 
 
   </Routes>
+<FooterPage/>
+
   </BrowserRouter>
 
   

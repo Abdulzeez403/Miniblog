@@ -17,7 +17,7 @@ const Createpost=()=>{
   setIspending(true);
 
   const post ={title, body, author, img, desc};
-  fetch("http://localhost:8000/post", {
+  fetch("http://localhost:8080/post", {
    method: "POST",
    headers:{ "Content-Type": "application/json"},
    body: JSON.stringify(post)

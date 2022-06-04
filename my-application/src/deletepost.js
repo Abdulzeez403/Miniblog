@@ -3,12 +3,12 @@ import useFetch from "./useFetch";
 
 const Deletepost = () => {
 
- const {data:blog, loading, handleError}=useFetch(`http://localhost:8000/post`);
+ const {data:blog, loading, handleError}=useFetch(`http://localhost:8080/post`);
  
  const DeleteFunc =()=>{
  const {id }=useParams();
  const navigate = useNavigate()
-  fetch(`http://localhost:8000/post/${id}` ,{
+  fetch(`http://localhost:8080/post/${id}` ,{
    method: "DELETE",
   }).then(()=>{
    navigate("/backend")

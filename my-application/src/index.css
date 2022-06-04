@@ -1,9 +1,7 @@
-a:hover{
+.menuList >a:hover{
   color: white;
- border-radius: 10px;
  padding:.4rem;
-  background: red;
-
+border-bottom: 3px solid grey;
 }
 
 form{
@@ -26,3 +24,11 @@ select{
  padding: .7rem 9rem 1rem 4rem;
  color:black;
 }
+@media screen and (min-width: 414px) {
+  .iconLink{
+  width: 20px;
+  color: red;
+  background: green;
+ }
+}
+

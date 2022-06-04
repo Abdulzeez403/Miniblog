@@ -2,7 +2,6 @@
  
 
  const useFetch = (url) =>{
-
   const [data, setData ]= useState(null);
   const [loading, setLoading ]= useState(true);
   const [handleError, setHandleError] = useState(null);
