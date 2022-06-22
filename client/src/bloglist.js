@@ -11,7 +11,7 @@ const Bloglist = ({blogs, title}) => {
   <div className="container shadow"
    key={blog.id}>
    <Link  className="row  row -d-sm-inline  text-decoration-none text text-dark d-flex justify-content-between py-3 my-4 mx-1"
-   to = {`/blogs/${blog.id}`}>
+   to = {`/blogs/${blog._id}`}>
 
    <div className="col text-sm-center   w-25 ">
    <h4 className="text-danger text-left ">{blog.title}</h4>

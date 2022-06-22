@@ -4,7 +4,7 @@ import useFetch from "./useFetch";
 
 const  Home =()=> {
 
-const {data:blogs, loading, handleError}= useFetch("http://localhost:8080/post");
+const {data:blogs, loading, handleError}= useFetch("http://localhost:3003/api");
 
  return(
  <div>

@@ -3,8 +3,8 @@ import useFetch from "./useFetch";
 
 
 const Blogdetail = () => {
-  const {id }=useParams();
-  const {data, loading, handleError}=useFetch(`http://localhost:8080/post/${id}`);
+  const _id =useParams();
+  const {data, loading, handleError}=useFetch("http://localhost:3003/api/ "+ _id);
 
  return ( 
   <div className="container">
