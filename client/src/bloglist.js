@@ -10,14 +10,14 @@ const Bloglist = ({blogs, title}) => {
   return(
   <div className="container shadow"
    key={blog.id}>
+    
    <Link  className="row  row -d-sm-inline  text-decoration-none text text-dark d-flex justify-content-between py-3 my-4 mx-1"
    to = {`/blogs/${blog._id}`}>
-
    <div className="col text-sm-center   w-25 ">
-   <h4 className="text-danger text-left ">{blog.title}</h4>
-   <h4>{blog.desc}</h4>
+   <h4 className="text-danger text-left ">{blog.Title}</h4>
+   <h4>{blog.Description}</h4>
    <div className="d-flex justify-content-between w-75 mt-3; ">
-   <p> Written by: {blog.author}</p>
+   <p> Written by: {blog.Author}</p>
    <div className="mt-0 d-flex ">
    <p className="mx-2">see: 0</p>
     <p>view: 0</p>

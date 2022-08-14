@@ -3,8 +3,8 @@ import useFetch from "./useFetch";
 
 
 const Blogdetail = () => {
-  const _id =useParams();
-  const {data, loading, handleError}=useFetch("http://localhost:3003/api/ "+ _id);
+  const id =useParams();
+  const {data, loading, handleError}=useFetch(`http://localhost:3003/api/${id}`);
 
  return ( 
   <div className="container">
@@ -13,10 +13,10 @@ const Blogdetail = () => {
    {data && (
 
    <div className="container text-center">
- <h4>{data.title}</h4>
-  <h4>{data.desc}</h4>
- <p>{data.body}</p>
-  <p>Written by {data.author}</p>
+ <h4>{data.Title}</h4>
+  <h4>{data.Description}</h4>
+ <p>{data.Body}</p>   
+  <p>Written by {data.Author}</p>
   </div>
     ) }
   

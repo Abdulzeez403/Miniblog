@@ -26,6 +26,6 @@ const PostDetail = new mongoose.Schema({
  }*/
  
  
-});
+}, {timestamp: true});
 const schematic = mongoose.model("BlogData",  PostDetail) 
 module.exports = schematic;
