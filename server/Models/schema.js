@@ -6,9 +6,8 @@ const PostDetail = new mongoose.Schema({
  },
 
  Description:{
-  type: String,
-  required: true
- },
+  type:String,
+},
 
  Body:{
   type: String,
@@ -18,14 +17,15 @@ const PostDetail = new mongoose.Schema({
   Author:{
   type: String,
   required: true
+ },
+
+ Image:{
+  data: Buffer,
+  contentType: String,
  }
 
- /*Image:{
-  type: Image,
-  required: true
- }*/
  
  
-}, {timestamp: true});
+}, {timestamps: true});
 const schematic = mongoose.model("BlogData",  PostDetail) 
 module.exports = schematic;

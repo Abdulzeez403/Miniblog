@@ -11,9 +11,10 @@ const  schematic = require("../Models/schema");
   const Description =req.body.Description;
   const Body =req.body.Body;
   const Author =req.body.Author;
+  const Image =req.body.Image;
    
    try{
-  const Blogs = new schematic({ Title: Title, Description: Description, Body:Body,  Author: Author});
+  const Blogs = new schematic({ Title: Title, Description: Description, Body:Body,  Author: Author, Image: Image});
   await  Blogs.save();
   res.send("Inserted Successfully");
  
@@ -38,10 +39,10 @@ const  schematic = require("../Models/schema");
   //fetching a single blog
   routes.get('/api/:id', (req, res) =>{
     const id = req.params.id;
-   // console.log(id);
+  //  console.log(id);
     schematic.findById(id)
      .then((result)=>{
-      res.send({Blogs: result})
+      res.send(result)
     })
     .catch((err)=>{
       console.log(err)

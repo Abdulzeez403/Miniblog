@@ -16,18 +16,6 @@ const Createpost=()=>{
 
  const handleSubmit =(e)=>{
   e.preventDefault();
- /* setIspending(true);
-
-  const post ={title, body, author, img, desc};
-  fetch("http://localhost:8080/post", {
-   method: "POST",
-   headers:{ "Content-Type": "application/json"},
-   body: JSON.stringify(post)
-  }).then(()=>{
-  setIspending(false);
-  navigate("/backend");
-   
-  });*/
  } 
 
  
@@ -37,9 +25,10 @@ const Addtodata=()=>{
  try{
   Axios.post(urlInsert,{
    Title: title,
-   Desc: desc,
+   Description: desc,
    Body: body,
-   Author: author
+   Author: author,
+   Image: img
   }) ;
  }catch(err){
   throw err;
@@ -90,7 +79,7 @@ onChange={(e)=> setBody(e.target.value)}
 <input 
 className=" w-50 p-2 rounded-2  "
 
-type="text"
+type="file"
 required
 value={img}
 onChange={(e)=> setImg(e.target.value)}
