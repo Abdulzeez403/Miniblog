@@ -1,0 +1,18 @@
+.content_container{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin: 5px;
+}
+.positioning{
+  position:absolute;
+  left:-21rem;
+  text-align: center;
+}
+.nav{
+  font-size: 1rem;
+  width: 14rem;
+  height: 50vh;
+  background: green;
+
+}

@@ -26,7 +26,7 @@ const Bloglist = ({blogs, title}) => {
    </div>
 
    <div className="col-sm-12 col-md-6">
-   <img className="  w-100 " src={blog.Image} style={{height: 250, objectFit: "cover"}} alt="BlogImage"/>
+   <img  src={blog.Image}  className="  w-100 " style={{height: 250, objectFit: "cover"}} alt="BlogImage"/>
    </div>
 
    </Link>

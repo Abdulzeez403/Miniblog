@@ -41,13 +41,14 @@ const Addtodata=()=>{
  return(
   <div className="container bg-warning  ">
 <h2 className="text-center"> Add a New Blog </h2>
-<form onSubmit={handleSubmit } className="text-center">
+<form onSubmit={handleSubmit } className="text-center"  enctype="multipart/form-data">
 
   <label  className=" h5 d-block">Blog title</label> 
 <input 
 className=" w-50 p-2 rounded-2  "
 type="text"
 required
+name = 'Image'
 value={title}
 onChange={(e)=> setTitle(e.target.value)}
  />

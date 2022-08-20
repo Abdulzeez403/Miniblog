@@ -20,8 +20,7 @@ const PostDetail = new mongoose.Schema({
  },
 
  Image:{
-  data: Buffer,
-  contentType: String,
+  type: String
  }
 
  

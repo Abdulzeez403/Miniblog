@@ -10,7 +10,9 @@ const port = 3003;
 app.use(cors());
 app.use(express.json( {extend: true}));
  //routess
- app.use(Blogroutes)
+app.use(Blogroutes)
+
+app.use('/uploads', express.static('uploads'))
 
 // mongodb url
 const url = "mongodb+srv://sodiq:$Abdulazeez403@cluster0.4nvfeif.mongodb.net/?retryWrites=true&w=majority";
