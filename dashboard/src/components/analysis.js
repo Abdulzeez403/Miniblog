@@ -1,4 +1,6 @@
 const Analysis = () => {
+
+
  return ( 
   <div className="container">
    <h4>Analysis Page</h4>
@@ -7,3 +9,5 @@ const Analysis = () => {
 }
  
 export default Analysis;
+
+
