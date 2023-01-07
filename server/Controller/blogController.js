@@ -52,29 +52,28 @@ const GettingASingleBlog = (req, res) => {
 
 const updateSingleBlog = (req, res) => {
   const id = req.params.id;
-  const title = req.body.Title;
-  const description = req.body.Description;
-  const body = req.body.Body;
-  const author = req.body.Author;
+  const Title = req.body.title;
+  const Description = req.body.description;
+  const Body = req.body.body;
+  const Author = req.body.author;
   // const updateThis = {
-  //   title,
-  //   description,
-  //   body,
-  //   author,
-  // }
+  //   Title: "namesssssssssss",
+  //   Description:"des",
+  //   Body:"bodying",
+  //   Author:"ME"
+  // };
 
   schematic.findByIdAndUpdate(
     id,
     {
-      title: "names",
-      description: "descrpting",
-      body: "the body",
-      auhor: "mine",
+      Title: "namesssssssssss",
+      Description: "desssssssssss",
+      Body: "bodying",
+      Author: "ME",
     },
-    { new: true },
     (err, data) => {
       if (err) {
-        console.log(err);
+        res.send(err);
       } else {
         console.log("update.." + data);
       }
@@ -83,9 +82,16 @@ const updateSingleBlog = (req, res) => {
   );
 };
 
+const deleteSingleBlog = async (req, res) => {
+  const id = req.params.id;
+ await schematic.findByIdAndRemove(id).exec();
+  res.send("Deleted!")
+  };
+
 module.exports = {
   post_blog,
-  GettingAllBlogs,
+  GettingAllBlogs, 
   GettingASingleBlog,
   updateSingleBlog,
+  deleteSingleBlog,
 };
