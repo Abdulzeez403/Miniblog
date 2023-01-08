@@ -1,10 +1,10 @@
+import Bloglist from "../bloglist";
+
 const Analysis = () => {
 
 
  return ( 
-  <div className="container">
-   <h4>Analysis Page</h4>
-  </div>
+  <Bloglist/>
   );
 }
  
